@@ -10,18 +10,17 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --header-decoration-color: #353430;
-  
-  --header-title-color: #FFC2E6;
-  --header-shadow-cocor: #FF8DCB;
+
+  --header-title-color: #ffc2e6;
+  --header-shadow-cocor: #ff8dcb;
 
   --highlight-text-color: #353430;
-  --highlight-color: #FF8DCB;
+  --highlight-color: #ff8dcb;
 
-
-  --background-color: #FFF1F7;
+  --background-color: #fff1f7;
   --text-colot: #353430;
 
   --section-header-color: #353430;
 
-  --header-image: url(/images/cover-image-light.png)
+  --header-image: url(/images/cover-image-light.png);
 }

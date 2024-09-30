@@ -9,20 +9,19 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --header-decoration-color: #FF0070;
-  
-  --header-title-color: #DB00FF;
-  --header-shadow-cocor: #FF0070;
+  --header-decoration-color: #ff0070;
+
+  --header-title-color: #db00ff;
+  --header-shadow-cocor: #ff0070;
 
   --highlight-text-color: #000028;
-  --highlight-color: #FF0070;
-
+  --highlight-color: #ff0070;
 
   --background-color: #000028;
-  --text-colot: #F1B2CE;
+  --text-colot: #f1b2ce;
 
-  --section-header-color: #FF0070;
-  
+  --section-header-color: #ff0070;
+
   --header-image: url(/images/cover-image-dark.png);
 }
 
@@ -32,23 +31,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --header-decoration-color: #FF0070;
-  
-    --header-title-color: #DB00FF;
-    --header-shadow-cocor: #FF0070;
-  
+    --header-decoration-color: #ff0070;
+
+    --header-title-color: #db00ff;
+    --header-shadow-cocor: #ff0070;
+
     --highlight-text-color: #000028;
-    --highlight-color: #FF0070;
-  
-  
+    --highlight-color: #ff0070;
+
     --background-color: #000028;
-    --text-colot: #F1B2CE;
-  
-    --section-header-color: #FF0070;
+    --text-colot: #f1b2ce;
+
+    --section-header-color: #ff0070;
     --header-image: url(/images/cover-image-dark.png);
   }
 
   .theme_auto .header__rec {
     display: flex;
   }
-} 
+}
