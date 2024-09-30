@@ -28,7 +28,7 @@ ul {
   list-style: none;
 }
 
-picture {
+picture, button {
   margin: 0;
   padding: 0;
 }

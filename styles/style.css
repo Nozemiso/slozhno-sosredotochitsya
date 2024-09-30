@@ -2,4 +2,262 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  color: var(--text-colot);
+  font-family: var(--basic-font);
+  background-color: var(--background-color);
+  font-size: 18px;
+  line-height: 130%;
+  max-width: 1024px;
+}
+
+.decorated-zone{
+  position: relative;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  inset:  var(--global-padding) var(--global-padding) auto auto;
+  border-top: 1px var(--header-decoration-color) solid;
+  border-right: 1px var(--header-decoration-color) solid;
+  content: "";
+  width: 25px;
+  height: 25px;
+}
+
+.decorated-zone::after {
+  position: absolute;
+  inset: auto auto var(--global-padding) var(--global-padding);
+  border-left: 1px var(--header-decoration-color) solid;
+  border-bottom: 1px var(--header-decoration-color) solid;
+  content: "";
+  width: 25px;
+  height: 25px;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: var(--header-image);
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+
+  padding: var(--global-padding);
+  margin-bottom: var(--header-margin-bottom);
+  /*В мобильной 10*/
+
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.header__rec {
+  display: none;
+  gap: 10px;
+  position: absolute;
+  inset: var(--global-padding) calc(var(--global-padding) + 9px) auto auto;
+  color: var(--header-decoration-color);
+  line-height: 25px;
+}
+
+.header__rec-circle {
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  align-self: center;
+  background-color: var(--header-decoration-color);
+  box-shadow: 0 0 4px 2px var(--header-decoration-color);
+}
+
+.header__theme-menu-list{
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  
+  width: fit-content;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  /* 
+    В мобильной расположить вертикально справа в центре
+  */
+}
+
+.header__theme-menu-item {
+  font-size: 18px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.header__theme-menu-button {
+  width: 70px;
+  height: 26px;
+  line-height: 18px;
+  padding-bottom: 2px;
+
+  text-align: center;
+  background-color: transparent;
+  font-family: inherit;
+  text-transform: lowercase;
+  border: none;
+  color: var(--header-decoration-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--header-decoration-color);
+}
+
+.header__title {
+  color: var(--header-title-color);
+  text-shadow: 4px 4px var(--header-shadow-cocor);
+  margin-left: calc(-1 * var(--global-padding));
+  line-height: 82.5%;
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  min-width: 0;
+  height: fit-content;
+}
+
+.header__text-area {
+  display: grid;
+  grid-template-columns: minmax(0, 50%) minmax(355px, 50%);
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.header__text {
+  grid-column: 2;
+  grid-row: 2;
+  font-weight: 700;
+}
+
+
+.main {
+  height: fit-content;
+  width: 100%;
+}
+
+
+.footer {
+  height: 100vh;
+  width: 100%;  
+}
+
+.section {
+  padding: 0 var(--global-padding);
+  margin-bottom: var(--section-margin-bottom);
+}
+
+.section__header {
+  color: var(--highlight-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.difficulties__list {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, fit-content);
+  gap: var(--list-grid-gap)
+}
+
+.difficulties__list-item {
+  grid-column: 2 / 2;
+}
+
+.header-aside {
+  width: auto;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.marked-text {
+  background-color: var(--highlight-color);
+  color: var(--highlight-text-color);
+}
+
+.article-card__header {
+  font-size: 18px;
+  margin-block-end: 10px;
+  font-weight: 700;
+}
+
+.reducers__list {
+  display: grid;
+  grid-template-rows: fit-content fit-content;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--list-grid-gap)
+}
+
+.reducers__list-item {
+  grid-row: 2 / 2;
+}
+
+.improve__list {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, fit-content);
+  gap: var(--list-grid-gap)  
+}
+
+.no-margin {
+  margin-block-end: 0;
+}
+
+.article-card__header {
+  font-size: 18px;
+  margin-block-end: 10px;
+  font-weight: 700;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.improve__list-item {
+  grid-column: 2 / 2;
+}
+
+.pictures__list {
+  display: grid;
+  grid-template-rows: fit-content repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--list-grid-gap)
+}
+
+.pictures__list-header {
+  grid-row: 1 / 1;
+  grid-column: 1 / 4;
+}
+
+.pictures__list img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.pictures__list-sunset {
+  grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.pictures__list-icecream {
+  grid-area: 2 / 3 / span 2 / span 1;  
+}
+
+.pictures__list-tape {
+  grid-area: 3 / 1 / span 2 / span 1;  
+}
+
+.pictures__list-books {
+  grid-area: 3 / 2 / span 1 / span 1;  
+}
+
+.pictures__list-street {
+  grid-area: 4 / 2 / span 1 / span 2;  
+}
+
+.footer {
+  margin-top: var(--footer-margin-top);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
