@@ -161,7 +161,7 @@
 }
 
 .section__header {
-  color: var(--highlight-color);
+  color: var(--section-header-color);
   font-size: 18px;
   font-weight: 700;
 }
