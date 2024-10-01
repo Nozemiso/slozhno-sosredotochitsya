@@ -143,6 +143,12 @@
   height: fit-content;
 }
 
+@media (width < 768px) {
+  .title {
+    margin: 0;
+  }
+}
+
 .header__text-area {
   display: grid;
   grid-template-columns: minmax(0, 50%) minmax(355px, 50%);
