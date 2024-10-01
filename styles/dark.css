@@ -11,18 +11,18 @@
   */
   --header-decoration-color: #ff0070;
 
-  --header-title-color: #db00ff;
-  --header-shadow-cocor: #ff0070;
+  --title-color: #db00ff;
+  --title-shadow-color: #ff0070;
 
   --highlight-text-color: #000028;
   --highlight-color: #ff0070;
 
   --background-color: #000028;
-  --text-colot: #f1b2ce;
+  --text-color: #f1b2ce;
 
   --section-header-color: #ff0070;
 
-  --header-image: url(/images/cover-image-dark.png);
+  --header-image: url(./../images/cover-image-dark.png);
 }
 
 .theme_dark .header__rec {
@@ -33,17 +33,17 @@
   :root {
     --header-decoration-color: #ff0070;
 
-    --header-title-color: #db00ff;
-    --header-shadow-cocor: #ff0070;
+    --title-color: #db00ff;
+    --title-shadow-color: #ff0070;
 
     --highlight-text-color: #000028;
     --highlight-color: #ff0070;
 
     --background-color: #000028;
-    --text-colot: #f1b2ce;
+    --text-color: #f1b2ce;
 
     --section-header-color: #ff0070;
-    --header-image: url(/images/cover-image-dark.png);
+    --header-image: url(./../images/cover-image-dark.png);
   }
 
   .theme_auto .header__rec {

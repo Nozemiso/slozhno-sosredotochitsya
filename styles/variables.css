@@ -6,20 +6,20 @@
 :root {
   --header-decoration-color: #353430;
 
-  --header-title-color: #ffc2e6;
-  --header-shadow-cocor: #ff8dcb;
+  --title-color: #ffc2e6;
+  --title-shadow-color: #ff8dcb;
 
   --highlight-text-color: #353430;
   --highlight-color: #ff8dcb;
 
   --background-color: #fff1f7;
-  --text-colot: #353430;
+  --text-color: #353430;
 
   --section-header-color: #353430;
 
-  --basic-font: "IBM Plex mono";
+  --basic-font: "IBM Plex mono", monospace, sans-serif;
 
-  --header-image: url(/images/cover-image-light.png);
+  --header-image: url(./../images/cover-image-light.png);
 
   --global-padding: 20px;
   --header-margin-bottom: 60px;
@@ -29,7 +29,7 @@
   --list-grid-gap: 20px;
 }
 
-@media (width < 400px) {
+@media (width < 768px) {
   :root {
     --global-padding: 10px;
     --header-margin-bottom: 40px;

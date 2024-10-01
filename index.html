@@ -17,8 +17,7 @@
   <body class="page">
     <header class="header decorated-zone">
       <div class="header__rec" aria-hidden="true">
-        <p class="header__rec-text">REC</p>
-        <div class="header__rec-circle"></div>
+        <p class="header__rec-text">Rec</p>
       </div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
@@ -46,23 +45,22 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__title">no focus</h1>
+      <h1 class="title">no focus</h1>
       <div class="header__text-area">
-        <p class="header__text marked-text">
-          Что делать, когда не можешь делать ничего<br />
-          Или почему нам так сложно сконцентрироваться, особенно когда очень
-          надо
-        </p>
+        <div class="header__text-block">
+          <p class="marked-text">Что делать, когда не можешь делать ничего</p>
+          <p class="marked-text">
+            Или почему нам так сложно сконцентрироваться, особенно когда очень
+            надо
+          </p>
+        </div>
       </div>
     </header>
     <main class="main">
       <section class="section difficulties">
         <div class="difficulties__content">
+          <h2 class="section__header">Почему сосредоточиться так сложно</h2>
           <ul class="difficulties__list">
-            <li class="header-aside text-grid-item">
-              <h2 class="section__header">Почему сосредоточиться так сложно</h2>
-            </li>
-
             <li class="difficulties__list-item text-grid-item">
               <article class="article-card">
                 <h3 class="article-card__header marked-text">
@@ -107,13 +105,8 @@
       </section>
       <section class="section reducers">
         <div class="reducers__content">
+          <h2 class="section__header">Что снижает концентрацию внимания?</h2>
           <ul class="reducers__list">
-            <li class="header-top text-grid-item">
-              <h2 class="section__header">
-                Что снижает концентрацию внимания?
-              </h2>
-            </li>
-
             <li class="reducers__list-item text-grid-item">
               <article class="article-card">
                 <h3 class="article-card__header marked-text">
@@ -162,23 +155,19 @@
       </section>
       <section class="section improve">
         <div class="improve__content">
+          <h2 class="section__header improve__header">
+            Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
+            секунд)
+          </h2>
+          <h3 class="article-card__header marked-text no-margin">
+            5 простых (на самом деле не очень) советов
+          </h3>
           <ul class="improve__list">
-            <li class="header-aside text-grid-item">
-              <h2 class="section__header">
-                Как концентрироваться лучше, чем золотая рыбка (то есть дольше
-                трёх секунд)
-              </h2>
-            </li>
-            <li>
-              <p class="article-card__header marked-text no-margin">
-                5 простых (на самом деле не очень) советов
-              </p>
-            </li>
             <li class="improve__list-item text-grid-item">
               <article class="article-card">
-                <h3 class="article-card__header marked-text normal">
+                <h4 class="article-card__header marked-text normal">
                   Представьте небо и облака
-                </h3>
+                </h4>
                 <p class="article-card__text">
                   Или листья в ручье. Тут дело в лёгкой медитации, которая
                   помогает успокоиться. Ведь часто именно тревожные мысли о
@@ -194,9 +183,9 @@
             </li>
             <li class="improve__list-item text-grid-item">
               <article class="article-card">
-                <h3 class="article-card__header marked-text normal">
+                <h4 class="article-card__header marked-text normal">
                   Включите музыку
-                </h3>
+                </h4>
                 <p class="article-card__text">
                   Но не любую, и не любимую. Любимая может быть связана с
                   сильными положительными эмоциями, которые тоже очень сильно
@@ -208,9 +197,9 @@
             </li>
             <li class="improve__list-item text-grid-item">
               <article class="article-card">
-                <h3 class="article-card__header marked-text normal">
+                <h4 class="article-card__header marked-text normal">
                   Прогуляйтесь
-                </h3>
+                </h4>
                 <p class="article-card__text">
                   Или даже пробегитесь. Лучше найти парк или лес: один
                   эксперимент
@@ -230,9 +219,9 @@
             </li>
             <li class="improve__list-item text-grid-item">
               <article class="article-card">
-                <h3 class="article-card__header marked-text normal">
+                <h4 class="article-card__header marked-text normal">
                   Хорошо ешьте
-                </h3>
+                </h4>
                 <p class="article-card__text">
                   Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
                   которые препятствуют резким скачкам сахара в крови. Например,
@@ -257,12 +246,11 @@
         </div>
       </section>
       <section class="section pictures no-margin">
+        <h2 class="article-card__header marked-text no-margin">
+          А можно в картинках?
+        </h2>
         <ul class="pictures__list">
-          <li class="pictures__list-header">
-            <h2 class="article-card__header marked-text no-margin">
-              А можно в картинках?
-            </h2>
-          </li>
+          <li class="pictures__list-header"></li>
           <li class="pictures__list-sunset">
             <img
               src="./images/sunset.png"
@@ -288,7 +276,7 @@
       </section>
     </main>
     <footer class="footer decorated-zone">
-      <p class="header__title">focus</p>
+      <p class="title">focus</p>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>

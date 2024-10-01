@@ -11,16 +11,16 @@
   */
   --header-decoration-color: #353430;
 
-  --header-title-color: #ffc2e6;
-  --header-shadow-cocor: #ff8dcb;
+  --title-color: #ffc2e6;
+  --title-shadow-color: #ff8dcb;
 
   --highlight-text-color: #353430;
   --highlight-color: #ff8dcb;
 
   --background-color: #fff1f7;
-  --text-colot: #353430;
+  --text-color: #353430;
 
   --section-header-color: #353430;
 
-  --header-image: url(/images/cover-image-light.png);
+  --header-image: url(./../images/cover-image-light.png);
 }
